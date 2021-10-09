@@ -19,6 +19,8 @@ const loadProgressBars = () => {
   const userInput = document.getElementById("userInput").value;
   const container = document.getElementById("progressBarContainer");
   
+  container.innerHTML = "";
+  
   let count = 1;
   appendProgressBar(container, count);
   
@@ -38,14 +40,5 @@ const loadProgressBars = () => {
   },50);
 }
 
-const clearProgressBars = () => {
-  
-  const container = document.getElementById("progressBarContainer");
-  container.innerHTML = "";
-}
-
 const submitButton = document.getElementById("submit");
 submitButton.addEventListener('click', loadProgressBars);
-
-const clearButton = document.getElementById("clear");
-clearButton.addEventListener('click', clearProgressBars);
