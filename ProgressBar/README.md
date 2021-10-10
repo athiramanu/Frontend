@@ -1,4 +1,4 @@
-#Progress Bar
+# Progress Bar
 
 Create a UI widget that displays "n" progress bars where n is received as an input from the user. 
 Each progress bar takes some time to fill. The next progress bar is displayed only after the first one reaches 100%.
